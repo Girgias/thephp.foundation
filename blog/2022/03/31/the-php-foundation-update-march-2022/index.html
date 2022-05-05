@@ -47,7 +47,8 @@
     <link rel="apple-touch-icon" sizes="2048x2048" href="/assets/icons/php_foundation.svg">
 
     <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="The PHP Foundation activity feed" />
-                </head>
+            <script src="//cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
 <body>
     <div class="wrapper w-full">
     <header>
@@ -268,6 +269,18 @@
         </p>
     </footer>
 
-        
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const anchors = new AnchorJS()
+    anchors.add()
+
+    for (const element of document.getElementsByClassName('anchorjs-link')) {
+      element.addEventListener('click', function () {
+        navigator.clipboard.writeText(window.location.origin + window.location.pathname + element.getAttribute('href'))
+      })
+    }
+  })
+</script>
+
         </body>
 </html>
