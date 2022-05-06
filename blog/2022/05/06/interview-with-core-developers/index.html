@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PHP Foundation Update, April 2022 &mdash; The PHP Foundation &mdash; Supporting, Advancing, and Developing the PHP Language</title>
+    <title>Interview with Core Developers &mdash; The PHP Foundation &mdash; Supporting, Advancing, and Developing the PHP Language</title>
     <meta name="description" content="The PHP Foundation &mdash; Supporting, Advancing, and Developing the PHP Language">
     <meta charset="utf-8">
     <meta name="theme-color" content="#ffffff">
@@ -13,16 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
 
-    <meta property="og:url" content="/blog/2022/05/02/the-php-foundation-update-april-2022/">
+    <meta property="og:url" content="/blog/2022/05/06/interview-with-core-developers/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="PHP Foundation Update, April 2022">
+    <meta property="og:title" content="Interview with Core Developers">
     <meta property="og:description" content="The PHP Foundation &mdash; Supporting, Advancing, and Developing the PHP Language">
     <meta property="og:image" content="/assets/icons/share.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="">
-    <meta property="twitter:url" content="/blog/2022/05/02/the-php-foundation-update-april-2022/">
-    <meta name="twitter:title" content="PHP Foundation Update, April 2022">
+    <meta property="twitter:url" content="/blog/2022/05/06/interview-with-core-developers/">
+    <meta name="twitter:title" content="Interview with Core Developers">
     <meta name="twitter:description" content="The PHP Foundation &mdash; Supporting, Advancing, and Developing the PHP Language">
     <meta name="twitter:image" content="/assets/icons/share.png">
 
@@ -123,88 +123,80 @@
     <main class="flex flex-row justify-center min-w-[320px] min-h-[100vh] w-full pt-4">
     <article class="max-w-2xl w-full bg-white px-4 md:px-0">
         <header class="mb-8">
-            <h1 class="">PHP Foundation Update, April 2022</h1>
+            <h1 class="">Interview with Core Developers</h1>
 
                         <div class="text-xs">
-				Published on <span>May 02, 2022</span>
-				by <a href="https://twitter.com/pronskiy">Roman Pronskiy</a>
+				Published on <span>May 06, 2022</span>
+				by <a href="https://github.com/sebastianbergmann">Sebastian Bergmann</a>
             </div>
                     </header>
 
         <section class="main_body">
-            <p><code>&lt;?php echo 'Hello world!';</code></p>
+            <p>The initial group of sponsored developers has now been "at it" for a month, and we thought that you might be interested in who they are and what they work on. I got the opportunity to (virtually) sit down with Derick Rethans, George Peter Banyard, Ilija Tovilo, Jakub Zelenka, and Máté Kocsis for an interview.</p>
 
-<p>We’re off by two but still happy to bring you an update from the foundation.</p>
+<p><strong>Sebastian:</strong> Let's start with a round of introductions. Who are you?</p>
 
-<p>It's been a month since the PHP Foundation began to fully deliver on its 2022 goal of hiring developers to work on the PHP core.</p>
+<p><strong>George:</strong> Hello, my name is George Peter Banyard. I'm studying pure mathematics at Imperial College London and expected to graduate in October. I'm half German, half British, but grew up in the south of France. During my free time I mostly watch anime or play puzzle games and Richii mahjong.</p>
 
-<p>Backed by our awesome sponsors, six talented folks have already been doing their work for a whole month. Derick Rethans, Arnaud Le Blanc, George Peter Banyard, Jakub Zelenka, and Máté Kocsis started on April 1, and Ilija Tovilo started even earlier than that.</p>
+<p><strong>Derick:</strong> I am originally from the Netherlands but currently living and enjoying London in the United Kingdom. When I am not behind my computer I will be likely be walking in the countryside or site, with my trusty camera to commit these views to screen.</p>
 
-<p>We’ve made the first <a href="https://opencollective.com/phpfoundation/expenses">payouts</a>, and we will continue making them regularly at the end of each month.</p>
+<p><strong>Ilija:</strong>  I am from Bern, Switzerland. I grew up here, but also have roots and relatives in Croatia. When I am not working, I enjoy spending time with family and friends, being in the sun, and listening to music. I also enjoy solving puzzles and playing chess.</p>
 
-<h2 id="how-were-the-devs-selected%2C-and-how-do-they-work%3F">How were the devs selected, and how do they work?</h2>
+<p><strong>Jakub:</strong> I am originally from Prague. I moved to the UK over 10 years ago. I work as a contractor and spend most of my free time with my family. I have got 2 dogs that I often walk.</p>
 
-<p>We received about 70 applications in total. From them, we selected everyone who had significant experience making <a href="https://github.com/php/php-src">php-src</a> contributions.</p>
+<p><strong>Máté:</strong> I am a 31 year old software developer, based in Hungary. Currently, I work for LastPass, and I am responsible for keeping our PHP backend modern as well as bringing it into the cloud. In my free time, I love riding my bike, walking, travelling. But my greatest hobby is certainly programming.</p>
 
-<p>We also now have a pool of a few other candidates, and we will consider involving them later.</p>
+<p><strong>Sebastian:</strong> What motivates you to work on Open Source?</p>
 
-<p>All of the current developers are working part time, and everyone has different working hours. The developers devote 10–40% of their time exclusively to PHP core maintenance, bug fixes, code reviews, preparing proposals, and implementing new language features.</p>
+<p><strong>George:</strong> This might be a strange answer, but I would say laziness. In the sense that if I like something from another project or language, I prefer going through the effort of adding that as a feature to what I already know and use instead of learning a whole new tool and ecosystem.</p>
 
-<p>You can follow the Foundation team's work in real-time by looking at <a href="https://github.com/php/php-src/commits/master">commits in php/php-src</a> and discussions in the <a href="https://externals.io/">Internals mailing list</a>.</p>
+<p><strong>Ilija:</strong> Almost all commercial software is built on Open Source. I think that without Open Source, most tech companies could not exist as they do today. Contributing to Open Source is a way for me to give back for the professional opportunities Open Source has given me.</p>
 
-<p>In addition to the PHP Foundation team, even more work on the PHP core is being done by Dmitry Stogov, Christoph M. Becker, and many other contributors to core and documentation. We’d like to give a big shout-out and thank-you to them!</p>
+<p><strong>Jakub:</strong> Working on Open Source gives me opportunities to learn new things in a useful way and allows me to give back something to the projects that I use.</p>
 
-<h2 id="php-roundup">PHP Roundup</h2>
+<p><strong>Derick:</strong> Originally it was a great way to learn how to do new things. Most of my early contributions to PHP were things that I needed myself. I have since then continued to scratch my own itch(es), but that has also resulted in me having to maintain some of the more popular projects, such as Xdebug.</p>
 
-<p>We have started a separate <a href="https://thephp.foundation/blog/2022/04/28/php-roundup-1/">PHP Roundup</a> newsletter that covers the development of the PHP core in more detail. Ayesh Karunaratne, the author of the <a href="https://php.watch/">PHP.Watch</a> website, is leading this initiative.</p>
+<p><strong>Máté:</strong> My first "major" open source contribution was a tiny little feature in Composer. Then I created a few libraries which also gained some traction. Even considering the limited scale my projects achieved, it was a fantastic experience for me that I did my share to improve the PHP ecosystem, and at least a few people found my work useful. In contrast, being able to improve PHP itself day by day may make the life of millions of developers better, which is a truly satisfying feeling.</p>
 
-<p>Check it out and subscribe at <a href="https://thephp.foundation/blog/2022/04/28/php-roundup-1/">thephp.foundation/blog/2022/04/28/php-roundup-1/</a>.</p>
+<p><strong>Sebastian:</strong> What was your first contribution to PHP?</p>
 
-<h2 id="bigger-picture-and-roadmap">Bigger picture and roadmap</h2>
+<p><strong>Máté:</strong> I have been using PHP since I was 15, and I'm a longtime PHP internals reader. Since finding the mailing list, I have always dreamed about being able to contribute to PHP, even if it is a tiny little change. Then fast-forward to 2019, when Nikita started the so-called "<a href="https://externals.io/message/106522">stubs initiative</a>". This was a perfect project to get started with my career. By submitting hundreds of PRs, I could learn a lot from Nikita and Christoph, among others, who tirelessly reviewed my code and helped when I was stuck.</p>
 
-<p>Some folks have asked us whether there is a roadmap for PHP. The short answer is ‘No’. But we’d be happy to grow to the point where we can have one.</p>
+<p><strong>Derick:</strong> Back in 2000, I first tried to add "sub query" support for MySQL. MySQL's query language did not support it, and I came up with a naive way of rewriting the query in C, by doing two queries. My first actual contribution was SWF support in the getimagesize() function, followed by adding libmcrypt 2.4 support to the mcrypt extension, which I also ended up mostly rewriting.</p>
 
-<p>The problem the Foundation was created to address will not be solved overnight simply because the funds become available. While PHP is in a better position than it has ever been in terms of financing, this doesn't do much to improve the bus factor. In other words, financing alone is not able to increase the availability of the expertise needed to execute the kinds of projects that would appear on a roadmap.</p>
+<p><strong>George:</strong> I first started by contributing to the French translation of the PHP documentation before working on the English docs and making my way to php-src to change some very strange behaviour I discovered while maintaining the docs.</p>
 
-<p>Financing allows us to cultivate expertise organically, which results in increasing the bus factor. That is precisely what we are currently doing. The only way to become an expert in PHP is by doing PHP. We are essentially paying contributors to become the kind of experts we will need in the future while at the same time compensating them for their valuable contributions in the present.</p>
+<p><strong>Ilija:</strong> I have been using PHP professionally for 6 years at that point and contributing has crossed my mind a few times. However, most features I could think of seemed daunting, especially since I did not have any experience with C. Then I saw this <a href="https://twitter.com/nikita_ppv/status/1240309838950866946">tweet</a> from Nikita about how <code>throw</code> could be changed to be allowed in expressions. Being bored in the early COVID-19 days, I was looking for a distraction. This seemed simple enough so I gave it a shot. The actual change was a one-liner but there were issues with OpCache which required help from Nikita and others to solve (recurring theme). Nonetheless, this was enough to pull me in and motivate me to keep making RFCs.</p>
 
-<p>It has taken us six months to get this far. And there'll be a time, quite soon, when we can talk more extensively about the future.</p>
+<p><strong>Jakub:</strong> I used to work as a PHP developer and came across an extension for PHP called fann. As it did not really work, I refactored the whole extension. That taught me a bit about PHP's internals. Some time later I wanted to properly learn tools such as bison and re2c. At that time, there was a need for a new JSON parser for PHP due to licensing issues. So I wrote a new JSON parser and became a PHP core contributor.</p>
 
-<h2 id="website-%E2%80%93-thephp.foundation">Website – <a href="https://thephp.foundation/">thephp.foundation</a></h2>
+<p><strong>Sebastian:</strong> What do you plan to work on in your time that is sponsored by The PHP Foundation?</p>
 
-<p>Thanks to the work of Matthew Weier O'Phinney, the foundation’s official website is now up and running. On its <a href="https://thephp.foundation/blog/">blog</a>, you can find all the updates and the PHP Roundup series.</p>
+<p><strong>Máté:</strong> First, I would like to finish my projects which I have already started: readonly classes (needs a successful RFC vote), converting resources to objects, adding constants to the stubs, and doing other groundwork for making our documentation more complete and easier to maintain. Then my plan is to improve the developer experience of the built-in extensions as well as continuing our efforts to make PHP a more consistent and reasonable language.</p>
 
-<p>The site is open source and is hosted on GitHub at <a href="https://github.com/ThePHPF/thephp.foundation">github.com/ThePHPF/thephp.foundation</a>.</p>
+<p><strong>George:</strong> I plan to mainly work on the type system as well as refactoring extension code for clarity. For example, I want to continue the effort of converting resources to opaque objects.</p>
 
-<p>It is made with the Sculpin static generator and uses Tailwind CSS. There are some <a href="https://github.com/ThePHPF/thephp.foundation/issues">known issues</a>, and pull requests with fixes and improvements are welcome.</p>
+<p><strong>Ilija:</strong> I have a few things that I would like to try to tackle: abstract data types, property accessors, type aliases, to name a few. My biggest goal is gaining a deep understanding of the code base (<a href="https://blog.krakjoe.ninja/2021/05/avoiding-busses.html">increasing the bus factor</a>), helping with maintenance, and helping others to the same.</p>
 
-<p>We will add pages about the foundation's structure and team shortly.</p>
+<p><strong>Jakub:</strong> I plan to primarily work on the maintenance and improvements in the areas that I have already been contributing to. Specifically, I would like to use roughly around 50% of my time on the FastCGI Process Manager (FPM), 20% on the OpenSSL extension, 10% on the JSON extension, 10% on the GnuPG extension, and the last 10% on streams as well as possibly other core parts.</p>
 
-<h2 id="thank-you-to-our-sponsors">Thank you to our sponsors</h2>
+<p><strong>Derick:</strong> To begin, I want to clean up all the date/time bugs and reports, dedicate time to fully understanding and assisting new RFCs, professionalising "security@", doing all the server admin tasks, and coming up with some new features such as perhaps a UString (Unicode String) class with all of its operations to have a much nicer interface compared to the clunky intl extension.</p>
 
-<p>We’d like to give a shout-out to everyone for your continued support, we truly appreciate it – the PHP Foundation is all of us!</p>
-
-<p>That’s all for today. Follow us on Twitter <a href="https://twitter.com/thephpf">@ThePHPF</a> to get the latest updates from the Foundation.</p>
-
-<p>💜🐘</p>
+<p><strong>Sebastian:</strong> Thank you for taking the time to answer my questions. I look forward to seeing your work make PHP better for everyone.</p>
 
         </section>
 
         <div class="border-t pt-5 my-5">
                         <nav class="flex flex-row justify-between article -mx-2 mb-5">
-                                <a href="/blog/2022/04/28/php-roundup-1/" class="flex flex-col w-1/2 border p-2 mx-2 rounded hover:border-[#7f52ff] transition-all no-underline">
+                                <a href="/blog/2022/05/02/the-php-foundation-update-april-2022/" class="flex flex-col w-1/2 border p-2 mx-2 rounded hover:border-[#7f52ff] transition-all no-underline">
                     <div class="mb-1 text-sm text-gray-600 font-medium">Previous</div>
-                    <div class="font-bold text-blue-500">PHP Roundup #1</div>
+                    <div class="font-bold text-blue-500">PHP Foundation Update, April 2022</div>
                 </a>
                 
-                                <a href="/blog/2022/05/06/interview-with-core-developers/" class="flex flex-col w-1/2 border p-2 mx-2 rounded hover:border-[rgba(127,82,255,.8)] transition-all no-underline">
-                    <div class="mb-1 text-sm text-gray-600 font-medium">Next</div>
-                    <div class="font-bold text-blue-500">Interview with Core Developers</div>
-                </a>
                             </nav>
             
             <div>
-                <a href="https://github.com/ThePHPF/thephp.foundation/edit/main/source/_posts/2022-05-02-the-php-foundation-update-april-2022.md" class="nav-org" rel="noopener noreferrer" target="_blank">Edit this page on GitHub</a>
+                <a href="https://github.com/ThePHPF/thephp.foundation/edit/main/source/_posts/2022-05-06-interview-with-core-developers.md" class="nav-org" rel="noopener noreferrer" target="_blank">Edit this page on GitHub</a>
             </div>
         </div>
     </article>

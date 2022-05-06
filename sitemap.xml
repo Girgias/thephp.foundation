@@ -7,6 +7,12 @@
     <priority>0.8</priority>
   </url>
     <url>
+    <loc>/blog/2022/05/06/interview-with-core-developers/</loc>
+    <lastmod>2022-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
     <loc>/blog/2022/05/02/the-php-foundation-update-april-2022/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,7 +38,7 @@
   </url>
       <url>
     <loc>/code-of-conduct</loc>
-    <lastmod>2022-05-06T07:21:54+00:00</lastmod>
+    <lastmod>2022-05-06T07:26:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
