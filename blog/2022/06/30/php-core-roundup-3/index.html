@@ -150,9 +150,13 @@
     </div>
 </div>
 
-<p>The PHP Foundation currently supports six part-time PHP contributors who work on both maintenance and new features for PHP. Maintenance is not limited to fixing bugs, but also includes work to reduce technical debt, making life easier for everyone working on PHP. The contributors funded by the PHP Foundation collaborate with other contributors on code, documentation, and discussions.</p>
+<blockquote>
+  <p><a href="https://opencollective.com/phpfoundation">The PHP Foundation</a> currently supports <a href="https://thephp.foundation/blog/2022/05/06/interview-with-core-developers/">six part-time PHP contributors</a> who work on both maintenance and new features for PHP. Maintenance is not limited to fixing bugs, but also includes work to reduce technical debt, making life easier for everyone working on PHP. The contributors funded by the PHP Foundation collaborate with other contributors on code, documentation, and discussions.</p>
+  
+  <p>Things marked with 💜 are done by the PHP Foundation team.</p>
+</blockquote>
 
-<p>Things marked with 💜 are done by the PHP Foundation team.</p>
+<p><br /></p>
 
 <h2 id="php-8.2-qa-releases-and-feature-freeze">PHP 8.2 QA Releases and Feature-freeze</h2>
 
@@ -214,7 +218,8 @@ function foo($param = E::Foo-&gt;value) {}
 class C {}
 </code></pre>
 
-<p>The RFC is to allow expressions above and other similar patterns, which are not currently allowed.</p></li>
+<p><br />
+ The RFC is to allow expressions above and other similar patterns, which are not currently allowed.</p></li>
 <li><p><strong>Under Discussion: <a href="https://wiki.php.net/rfc/pdo_driver_specific_subclasses">PDO driver specific sub-classes</a></strong></p>
 
 <p>RFC by Dan Ackroyd proposes to add new subclasses (with PDO as the parent) for individual database drivers so they can introduce their own additions to the PDO class easily. Some of the use cases mentioned in the RFC include PostgreSQL and Sqlite drivers that could declare methods to functionality that are unique to that software.</p></li>
@@ -245,7 +250,7 @@ class C {}
 <p>Following are some of the changes that did not go through an RFC process because they are either planned, bug fixes, or progressive enhancements. There are automated unit and integration tests for each of these changes, and all pull requests are reviewed by the PHP core developers.</p>
 
 <ul>
-<li>Bug fixes and improvements in Date extension by Derick Rethans <strong>💜</strong>
+<li>Bug fixes and improvements in Date extension by Derick Rethans 💜
 
 <ul>
 <li>Bug <a href="https://bugs.php.net/bug.php?id=80047">#80047</a>: DatePeriod doesn't warn with custom <code>DateTimeImmutable</code> in commit <a href="https://github.com/php/php-src/commit/973c3f6e241227ffc14c3608c774d7636b798cec">973c3f6</a></li>
@@ -253,7 +258,7 @@ class C {}
 <li>Fixed tests that relied on <code>date.timezone=UTC</code> to work in commit <a href="https://github.com/php/php-src/commit/242b9438ea1f9a7f72afe1db5cd8f3bf80152dc5">242b943</a></li>
 <li>Bug <a href="https://bugs.php.net/bug.php?id=73239">#73239</a>: DateTime shows strange error message with invalid timezone in PR <a href="https://github.com/php/php-src/pull/8594">#8594</a></li>
 </ul></li>
-<li>Bug fixes and improvements in Opcache by Dmitry Stogov,  Ilija Tovilo, and Derick Rethans <strong>💜</strong>
+<li>Bug fixes and improvements in Opcache by Dmitry Stogov,  Ilija Tovilo, and Derick Rethans 💜
 
 <ul>
 <li>Bug <a href="https://github.com/php/php-src/issues/8863">GH-8863</a>: RW operation on readonly property doesn't throw with JIT in commit <a href="https://github.com/php/php-src/commit/ad40fffd36cab87c249c28af6374c72959937dd6">ad40fffd</a></li>
@@ -287,12 +292,12 @@ class C {}
 <li>Restore backwards-compatible mappings of 0x5C and 0x7E in SJIS in commit <a href="https://github.com/php/php-src/commit/2dc9026cbc46c1a76bfac4c8436cb6b293b3e4db">2dc9026c</a></li>
 <li>Fast text conversion interfaces for several character encodings</li>
 </ul></li>
-<li><p>Deprecate <code>zend_atol()</code> / add <code>zend_ini_parse_quantity()</code> in PR <a href="https://github.com/php/php-src/pull/7951">#7951</a> by Sara Golemon and Arnaud Le Blanc</p>
+<li><p>Deprecate <code>zend_atol()</code> / add <code>zend_ini_parse_quantity()</code> in PR <a href="https://github.com/php/php-src/pull/7951">#7951</a> by Sara Golemon and Arnaud Le Blanc 💜</p>
 
 <p>Note that this introduces warnings on INI values for data sizes that PHP used to parse without any prior warnings. Some of the examples of these patterns are “<em><code>123GB</code></em>” (interpretted as “<em><code>123</code></em>”, although the the caller likely meant 123 Gigabytes) and “<em><code>123KMG</code></em>” as "<em><code>123G</code></em>" -> <em>132070244352</em>”. This is because  <code>zend_atol()</code> / add <code>zend_ini_parse_quantity()</code> functions accept 'K', 'M', or 'G' as a unit multiplier, but ignore all other non-numeric characters in between.</p></li>
 <li>Mark parameters as sensitive (using <code>SensitiveParameter</code> attribute <a href="https://php.watch/versions/8.2/backtrace-parameter-redaction">new in PHP 8.2</a>, <a href="https://wiki.php.net/rfc/redact_parameters_in_back_traces">RFC</a>) in several PHP extensions in PR <a href="https://github.com/php/php-src/pull/8352">#8352</a> by Tim Düsterhus</li>
-<li>Don't shortcut empty oparray executions if <code>zend_execute_ex</code> has been overridden in commit <a href="https://github.com/php/php-src/commit/5bfc160817a3b707718cc764661321daffadd402">5bfc1608</a>, so that debugging continues working well by Derick Rethans <strong>💜</strong></li>
-<li>Fix phpize to include <code>_GNU_SOURCE</code> by default in commit <a href="https://github.com/php/php-src/commit/2c166647f1a54dfa768b4dda680c5953f54b9c3a">2c166647</a> by Derick Rethans <strong>💜</strong></li>
+<li>Don't shortcut empty oparray executions if <code>zend_execute_ex</code> has been overridden in commit <a href="https://github.com/php/php-src/commit/5bfc160817a3b707718cc764661321daffadd402">5bfc1608</a>, so that debugging continues working well by Derick Rethans 💜</li>
+<li>Fix phpize to include <code>_GNU_SOURCE</code> by default in commit <a href="https://github.com/php/php-src/commit/2c166647f1a54dfa768b4dda680c5953f54b9c3a">2c166647</a> by Derick Rethans 💜</li>
 <li>Zip extension: Implement <code>fseek</code> for zip stream when possible with libzip 1.9.1 in commit <a href="https://github.com/php/php-src/commit/2223853c58087f3c025bf04257f53720e5454036">2223853c</a> by Remi Collet</li>
 <li>Zip extension: Fix<a href="https://github.com/php/php-src/issues/8781"> GH-8781</a> <code>ZipArchive::close</code> deletes zip file without updating stat cache in commit <a href="https://github.com/php/php-src/commit/390538af2ed5cd18e3096ad70597035dbca52139">390538a</a> by Remi Collet</li>
 <li>FPM: Fixed zlog message prepend, free on incorrect address in commit <a href="https://github.com/php/php-src/commit/325ca31dc">325ca31d</a> by Heiko Weber and David CARLIER</li>
@@ -304,7 +309,7 @@ class C {}
 <li>Multiple bug fixes related Enums in commits <a href="https://github.com/php/php-src/commit/bc03deec278923045235f470b4969bab358feaa2">bc03deec</a>, <a href="https://github.com/php/php-src/commit/bc03deec278923045235f470b4969bab358feaa2">d9e1871c</a>, <a href="https://github.com/php/php-src/commit/912c22cca0477a60507a957a835eccedfe1d00fe">912c22cc</a>, <a href="https://github.com/php/php-src/commit/45210b47294da6aafee7ca0a1b80db1c76fe4433">45210b47</a>, and <a href="https://github.com/php/php-src/commit/76fcd70c13f0c4b66937f381d5313c4f4c4cd548">76fcd70c</a> by Ilija Tovilo 💜</li>
 <li>Allow arbitrary constant expressions in backed enums in PR <a href="https://github.com/php/php-src/pull/8190">#8190</a> by Ilija Tovilo 💜</li>
 <li>Get rid of duplicated rotr3 implementation in PR <a href="https://github.com/php/php-src/pull/8853">#8853</a> by Ilija Tovilo 💜</li>
-<li>Declare constants in stubs for several extensions by Máté Kocsis</li>
+<li>Declare constants in stubs for several extensions by Máté Kocsis 💜</li>
 <li>Fix lineno in backtrace of multi-line function calls, fixing <a href="https://github.com/php/php-src/issues/8810">GH-8810</a> in PR <a href="https://github.com/php/php-src/pull/8818">#8818</a> by Ilija Tovilo 💜</li>
 <li>Refactoring part of SPL <code>Directory.c</code> PR <a href="https://github.com/php/php-src/pull/8837">#8837</a> by George Peter Banyard 💜</li>
 <li>Use the passed '<code>this</code>' pointer instead of <code>ZEND_THIS</code>in PR <a href="https://github.com/php/php-src/pull/8854">#8854</a> by George Peter Banyard 💜</li>
@@ -323,7 +328,7 @@ class C {}
 <li>Fix<a href="https://github.com/php/php-src/issues/8563"> GH-8563</a> Different results for <code>seek()</code> on <code>SplFileObject</code> and <code>SplTempFileObject</code> in commit <a href="https://github.com/php/php-src/commit/6f87a5c633">#6f87a5c6</a> by George Peter Banyard 💜</li>
 <li>Zend, ext/opcache: use <code>PR_SET_VMA_ANON_NAME</code> (Linux 5.17) in PR <a href="https://github.com/php/php-src/pull/8234">#8234</a> by Max Kellermann</li>
 <li>Fixed potential use after free in <code>php_binary_init()</code> in PR <a href="https://github.com/php/php-src/pull/8791">#8791</a> by Heiko Weber</li>
-<li>Implemented: Declare true return types in PR <a href="https://github.com/php/php-src/pull/8759">#8759</a> by Máté Kocsis</li>
+<li>Implemented: Declare true return types in PR <a href="https://github.com/php/php-src/pull/8759">#8759</a> by Máté Kocsis 💜</li>
 <li>streams/xp_socket: eliminate <code>poll()</code> when <code>MSG_DONTWAIT</code> is available in PR <a href="https://github.com/php/php-src/pull/8092">#8092</a> by Max Kellermann</li>
 <li>Fix<a href="https://github.com/php/php-src/issues/8778"> GH-8778</a>: Integer arithmetic with large number variants fails in PR <a href="https://github.com/php/php-src/pull/8779">#8779</a> by Christoph M. Becker</li>
 <li>Fixed <a href="https://bugs.php.net/bug.php?id=77726">#77726</a>: Allow null character in regex patterns in PR <a href="https://github.com/php/php-src/pull/8114">#8114</a> by @tobil4sk</li>
