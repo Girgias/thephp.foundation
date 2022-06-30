@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thephp.foundation</loc>
-    <lastmod>2022-06-27</lastmod>
+    <lastmod>2022-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://thephp.foundation/blog/2022/06/30/php-core-roundup-3/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
     <url>
     <loc>https://thephp.foundation/blog/2022/06/01/php-foundation-update-may-2022/</loc>
@@ -50,7 +56,7 @@
   </url>
       <url>
     <loc>https://thephp.foundation/code-of-conduct</loc>
-    <lastmod>2022-06-27T12:35:52+00:00</lastmod>
+    <lastmod>2022-06-30T08:41:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
