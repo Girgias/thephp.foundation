@@ -3,7 +3,7 @@
     <title><![CDATA[The PHP Foundation]]></title>
     <link href="https://thephp.foundation/atom.xml" rel="self"/>
     <link href="https://thephp.foundation/"/>
-    <updated>2022-07-04T16:23:31+00:00</updated>
+    <updated>2022-07-04T16:25:41+00:00</updated>
     <id>https://thephp.foundation/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
@@ -230,8 +230,6 @@ class C {}
 <li>Fully convert <code>accel_remap_huge_pages</code> to use zend_result in commit <a href="https://github.com/php/php-src/commit/0429159775658f9b9f81d67e4206cf449da01679">0429159</a></li>
 <li>Remove redundant address comparison in <code>accel_remap_huge_pages</code> in commit <a href="https://github.com/php/php-src/commit/1380b65d261d1ab2e2e920173b836cd95325c8a0">1380b65d</a></li>
 <li>Fixed bug<a href="https://github.com/php/php-src/issues/8847"> GH-8847</a>: PHP hanging infinitely at 100% cpu when check php syntaxes of a valid file in commit <a href="https://github.com/php/php-src/commit/7cf6f173831caea9952a84b9e4a93594aac8ba00">7cf6f173</a></li>
-<li>Fix incorrect constant propagation for <code>VERIFY_RETURN_TYPE</code> in commit <a href="https://github.com/php/php-src/commit/fa75bd078511c80c8be655719c7681fa65798c13">fa75bd07</a></li>
-<li>JIT: Add IBT support in PR <a href="https://github.com/php/php-src/pull/8774">#8774</a> with Chen, Hu.</li>
 </ul></li>
 <li>Several improvements in the Curl extension by Pierrick Charron
 
@@ -253,7 +251,7 @@ class C {}
 </ul></li>
 <li><p>Deprecate <code>zend_atol()</code> / add <code>zend_ini_parse_quantity()</code> in PR <a href="https://github.com/php/php-src/pull/7951">#7951</a> by Sara Golemon and Arnaud Le Blanc 💜</p>
 
-<p>Note that this introduces warnings on INI values for data sizes that PHP used to parse without any prior warnings. Some of the examples of these patterns are “<em><code>123GB</code></em>” (interpretted as “<em><code>123</code></em>”, although the the caller likely meant 123 Gigabytes) and “<em><code>123KMG</code></em>” as "<em><code>123G</code></em>" -> <em>132070244352</em>”. This is because  <code>zend_atol()</code> / add <code>zend_ini_parse_quantity()</code> functions accept 'K', 'M', or 'G' as a unit multiplier, but ignore all other non-numeric characters in between.</p></li>
+<p>Note that this introduces warnings on INI values for data sizes that PHP used to parse without any prior warnings. Some of the examples of these patterns are “<em><code>123GB</code></em>” (interpretted as “<em><code>123</code></em>”, although the caller likely meant 123 Gigabytes) and “<em><code>123KMG</code></em>” as "<em><code>123G</code></em>" -> <em>132070244352</em>”. This is because  <code>zend_atol()</code> / add <code>zend_ini_parse_quantity()</code> functions accept 'K', 'M', or 'G' as a unit multiplier, but ignore all other non-numeric characters in between.</p></li>
 <li>Mark parameters as sensitive (using <code>SensitiveParameter</code> attribute <a href="https://php.watch/versions/8.2/backtrace-parameter-redaction">new in PHP 8.2</a>, <a href="https://wiki.php.net/rfc/redact_parameters_in_back_traces">RFC</a>) in several PHP extensions in PR <a href="https://github.com/php/php-src/pull/8352">#8352</a> by Tim Düsterhus</li>
 <li>Don't shortcut empty oparray executions if <code>zend_execute_ex</code> has been overridden in commit <a href="https://github.com/php/php-src/commit/5bfc160817a3b707718cc764661321daffadd402">5bfc1608</a>, so that debugging continues working well by Derick Rethans 💜</li>
 <li>Fix phpize to include <code>_GNU_SOURCE</code> by default in commit <a href="https://github.com/php/php-src/commit/2c166647f1a54dfa768b4dda680c5953f54b9c3a">2c166647</a> by Derick Rethans 💜</li>
@@ -274,7 +272,7 @@ class C {}
 <li>Use the passed '<code>this</code>' pointer instead of <code>ZEND_THIS</code>in PR <a href="https://github.com/php/php-src/pull/8854">#8854</a> by George Peter Banyard 💜</li>
 <li>Fixed <a href="https://github.com/php/php-src/issues/8861">GH-8861</a>: correctly handle string lengths in <code>SplFileinfo</code> methods in PR <a href="https://github.com/php/php-src/issues/8861">#8861</a> by M. Vondano and George Peter Banyard 💜</li>
 <li>Fix<a href="https://github.com/php/php-src/issues/8848"> GH-8848</a>: <code>imagecopyresized()</code> error refers to the wrong argument in commit <a href="https://github.com/php/php-src/commit/9405f43ba927376e02f4023cbfdc0f9bf412396d">9405f43b</a> by Christoph M. Becker</li>
-<li>Merged Convert iterable into an internal alias for Traversable|array PR <a href="https://github.com/php/php-src/pull/7309">#7309</a> by George Peter Banyard 💜</li>
+<li>Convert iterable into an internal alias for Traversable|array PR <a href="https://github.com/php/php-src/pull/7309">#7309</a> by George Peter Banyard 💜</li>
 <li>Use same type error wording for alias iterable in ZPP in PR <a href="https://github.com/php/php-src/pull/8838">#8838</a> by George Peter Banyard 💜</li>
 <li>Support the <code>#[\AllowDynamicProperties]</code> attribute in stubs in PR <a href="https://github.com/php/php-src/pull/8776">#8776</a> by Tim Düsterhus</li>
 <li>Refactor <code>sapi_getenv()</code> in PR <a href="https://github.com/php/php-src/pull/8786">#8786</a> by Heiko Weber</li>
