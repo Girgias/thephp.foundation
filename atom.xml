@@ -3,9 +3,89 @@
     <title><![CDATA[The PHP Foundation]]></title>
     <link href="https://thephp.foundation/atom.xml" rel="self"/>
     <link href="https://thephp.foundation/"/>
-    <updated>2022-06-30T09:47:56+00:00</updated>
+    <updated>2022-07-04T16:22:58+00:00</updated>
     <id>https://thephp.foundation/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[PHP Foundation Update, June 2022]]></title>
+            <link href="https://thephp.foundation/blog/2022/07/04/php-foundation-update-june-2022/"/>
+            <updated>2022-07-04T00:00:00+00:00</updated>
+            <id>https://thephp.foundation/blog/2022/07/04/php-foundation-update-june-2022/</id>
+            <content type="html"><![CDATA[<p><code>&lt;?php echo 'Hello world!';</code></p>
+
+<p>This month PHP foundation staff continues to work on the PHP core and the development of the initiative as a whole. Read on to learn more about what developers have accomplished, new sponsors, and other than financial ways to contribute to the foundation.</p>
+
+<blockquote>
+  <p>We've created an official LinkedIn page: <a href="https://www.linkedin.com/company/phpfoundation/">linkedin.com/company/phpfoundation</a>.
+  Subscribe to it and follow us on Twitter <a href="https://twitter.com/thePHPF">@ThePHPF</a>.</p>
+</blockquote>
+
+<h2 id="php-core-roundup">PHP Core Roundup</h2>
+
+<p>Here's a summary of what the foundation's developers have been working on lately:</p>
+
+<ul>
+<li><p><a href="https://github.com/arnaud-lb">Arnaud Le Blanc</a> revised the RFC and implementation of multi-statement short closures. The proposal is now on vote. Arnaud has also finished the improvements to ini quantity parsing.</p></li>
+<li><p><a href="https://github.com/derickr">Derick Rethans</a> continues to fix bugs in DateTime to make working with dates in PHP as reliable as possible.</p></li>
+<li><p><a href="https://github.com/Girgias">George P. Banyard</a> has made several improvements to the type system: true, null, and false standalaone types have been added, and Disjunctive Normal Form Types put on vote. George also made a few fixes in SPL.</p></li>
+<li><p><a href="https://github.com/iluuu1994">Ilija Tovilo</a> implemented multiple improvements for enums and put a couple on vote. He also made many fixes, like for instance fixed line numbers in backtrace of multi-line (fluent) function calls.</p></li>
+<li><p><a href="https://github.com/bukka">Jakub Zelenka</a> made various fixes and improvements to PHP-FPM and OpenSSL extension.</p></li>
+<li><p><a href="https://github.com/kocsismate">Máté Kocsis</a> makes improvements to stubs and other fixes.</p></li>
+</ul>
+
+<p>All developers devote significant time to maintenance, including fixing bugs, reducing technical debt, and making life easier for everyone working on PHP.</p>
+
+<p>In the <strong><a href="https://thephp.foundation/blog/2022/06/30/php-core-roundup-3/">PHP Roundup #3</a></strong> post by Ayesh, you can find a detailed log of what's been done and discussed regarding the PHP engine during the past month.</p>
+
+<p>This time the list of changes is very long! Applause to all the PHP contributors and release managers.</p>
+
+<p>Tweet at us: <a href="https://twitter.com/thephpf">@ThePHPF</a>, <a href="https://twitter.com/Ayeshlive">@Ayeshlive</a>, <a href="https://twitter.com/pronskiy">@pronskiy</a>.</p>
+
+<h2 id="thank-you-to-our-sponsors">Thank you to our sponsors</h2>
+
+<p>This month we are glad to welcome a new major sponsor who joined the PHP Foundation’s sponsors herd: <strong><a href="https://www.mollie.com/en">Mollie</a></strong>.  Thank you, folks!</p>
+
+<p>By the way, we have updated the <strong><a href="https://thephp.foundation/#sponsors">Sponsors section</a></strong> on our <a href="https://thephp.foundation/">website</a>. It now shows all major contributors sorted by the amount of donation. Kudos to <a href="https://twitter.com/s_panteleev">Sergei Panteleev</a> for this tweak.</p>
+
+<p>Shout-out to everyone for your continued support – the PHP Foundation is all of us!</p>
+
+<h2 id="other-ways-to-contribute">Other ways to contribute</h2>
+
+<p>We are receiving many offers of help from every corner of the community. We are grateful for the offers. There are essentially two kinds of offers being made:</p>
+
+<ol>
+<li>An offer of development time</li>
+<li>An offer of expertise</li>
+</ol>
+
+<h3 id="how-to-contribute-development-time%3F">How to contribute development time?</h3>
+
+<p>The Foundation has limited resources to manage the developers we contract to work on PHP. For this reason, it is not sensible to assume the management of external developers.</p>
+
+<p>Any external developer who is compensated for their time spent on PHP is, of course, welcome to make use of our public communication channels:</p>
+
+<ol>
+<li>Email as: contact@thephp.foundation</li>
+<li>Communicate via issues on GitHub repos: <a href="https://github.com/php/php-src">github.com/php/php-src</a>, <a href="https://github.com/php/web-php">github.com/php/web-php</a>, etc.</li>
+</ol>
+
+<h3 id="how-to-contribute-expertise%3F">How to contribute expertise?</h3>
+
+<p>As the foundation begins to mature, a couple of currently unfulfilled roles have emerged.</p>
+
+<p>We will soon communicate the details of these roles.</p>
+
+<p>We intend to compile a list of all expertise on offer; If you haven't done so already, please tell what expertise you would like to make available using public communication channels.</p>
+
+<hr />
+
+<p><br></p>
+
+<p>That’s all for today. Follow us on Twitter <a href="https://twitter.com/thephpf">@ThePHPF</a> to get the latest updates from the Foundation.</p>
+
+<p>💜🐘</p>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[PHP Core Roundup #3]]></title>
             <link href="https://thephp.foundation/blog/2022/06/30/php-core-roundup-3/"/>
