@@ -49,9 +49,8 @@
     <link rel="alternate" type="application/atom+xml" href="https://thephp.foundation/atom.xml" title="The PHP Foundation activity feed" />
                 </head>
 <body>
-    <div class="wrapper w-full">
-    <header>
-        <header class="border-b border-hborder box-border z-50 flex items-center
+    <header class="wrapper w-full">
+        <div class="border-b border-hborder box-border z-50 flex items-center
             justify-between bg-white top-0 px-4 h-12 sticky min-w-[320px]
             box-border md:h-16 lg:px-8"
             x-data="{ isOpen: false }" @keydown.escape="isOpen = false" @click.away="isOpen = false">
@@ -117,8 +116,9 @@
                    </svg>
                </button>
            </div>
+        </div>
     </header>
-
+    
     <main class="flex flex-row justify-center min-w-[320px] min-h-[100vh] w-full pt-4">
 	<section class="max-w-2xl w-full bg-white px-4 md:px-0">
 		<header class="mb-16">
@@ -179,7 +179,7 @@ Interview wit...</p>
             <header>
                 <h4 class="mb-1"><a href="https://thephp.foundation/blog/2022/05/06/interview-with-core-developers/">Interview with Core Developers</a></h4>
 								<div class="text-xs mb-4">
-					Published on <span>Jul 13, 2022</span>
+					Published on <span>Jul 17, 2022</span>
 					by <a href="https://github.com/sebastianbergmann">Sebastian Bergmann</a>
 
 				</div>
@@ -243,7 +243,7 @@ Thanks to all...</p>
         </section>
         
             </section>
-</main>
+</main>    
     <footer class="py-8 px-4 md:flex md:items-center md:justify-between bg-[#27282c]">
         <ul class="mb-6 md:mb-0 flex flex-wrap items-center list-none text-[#27282c] text-base font-normal">
             <li class="footer-li">
