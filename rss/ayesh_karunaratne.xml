@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title><![CDATA[The PHP Foundation]]></title><description><![CDATA[Supporting, Advancing, and Developing the PHP Language]]></description><updated>2022-07-29T08:42:26+00:00</updated><entry><title type="html"><![CDATA[PHP Core Roundup #2]]></title><content type="html"><![CDATA[<p>Welcome back to round #2 of <em>PHP Core Roundup</em>, where we’ll make regular updates on the improvements made to PHP by the PHP Foundation and other contributors. In this second one in the series, we have news about the upcoming PHP 8.2 release, some new RFCs accepted, voted, and being discussed, and some further improvements to PHP made in the past few weeks.</p>
+<feed xmlns="http://www.w3.org/2005/Atom"><title><![CDATA[The PHP Foundation]]></title><description><![CDATA[Supporting, Advancing, and Developing the PHP Language]]></description><updated>2022-07-29T08:55:14+00:00</updated><entry><title type="html"><![CDATA[PHP Core Roundup #2]]></title><content type="html"><![CDATA[<p>Welcome back to round #2 of <em>PHP Core Roundup</em>, where we’ll make regular updates on the improvements made to PHP by the PHP Foundation and other contributors. In this second one in the series, we have news about the upcoming PHP 8.2 release, some new RFCs accepted, voted, and being discussed, and some further improvements to PHP made in the past few weeks.</p>
 
 <p>You don’t necessarily have to be a PHP Foundation backer to follow the PHP Roundup. We’ll be publishing the posts on our website, and you can subscribe to a newsletter:</p>
 
@@ -355,7 +355,6 @@ The RFC missed the 2/3 vote with 27 votes in favor and 16 against.</p>
 <li>Fix <a href="https://github.com/php/php-src/issues/8576">GH-8576</a>: Bad interpretation of length when char is UTF-8 in <a href="https://github.com/php/php-src/pull/8926">GH-8926</a> by Christoph M. Becker</li>
 <li>Support the actual <code>#[\SensitiveParameter]</code> attribute in stubs in <a href="https://github.com/php/php-src/pull/8836">GH-8836</a> in <a href="https://github.com/php/php-src/commit/342e18f105">342e18f105</a> by Tim Düsterhus</li>
 <li>Fix parameter order in <code>gen_stub.php</code> in <a href="https://github.com/php/php-src/commit/227a8576d2">227a8576d2</a> by Máté Kocsis 💜</li>
-<li>Fix parameter order in <code>gen_stub.php</code> in <a href="https://github.com/php/php-src/commit/227a8576d2">227a8576d2</a> by Máté Kocsis 💜</li>
 <li>Fix <a href="https://github.com/php/php-src/issues/8923">GH-8923</a>: error_log on Windows can hold the file write lock in <a href="https://github.com/php/php-src/pull/8925">GH-8925</a> by Christoph M. Becker</li>
 <li>add compatibility for tentative-return-type in <a href="https://github.com/php/php-src/commit/6e24c16c4a">6e24c16c4a</a> by Remi Collet</li>
 <li>Fix <a href="https://github.com/php/php-src/issues/8750">GH-8750</a>: Can not create <code>VT_ERROR</code> variant type in <a href="https://github.com/php/php-src/pull/8886">GH-8886</a> by Christoph M. Becker</li>
@@ -380,9 +379,8 @@ The RFC missed the 2/3 vote with 27 votes in favor and 16 against.</p>
 <li>cleanup unused in <a href="https://github.com/php/php-src/commit/ee1d6188cf">ee1d6188cf</a> by Remi Collet</li>
 <li>no need for attributes on legacy in <a href="https://github.com/php/php-src/commit/af72d6e5d9">af72d6e5d9</a> by Remi Collet</li>
 <li>in <a href="https://github.com/php/php-src/commit/f0d536844f">f0d536844f</a> by Máté Kocsis 💜</li>
-<li>FPM: Downgrade occasional “failed to acquire scoreboard” warning in <a href="https://github.com/php/php-src/commit/3040f75f43">3040f75f43</a> by Felix Wiedemann</li>
+<li>FPM: Downgrade occasional “failed to acquire scoreboard” warning in <a href="https://github.com/php/php-src/commit/3040f75f43">3040f75f43</a>, <a href="https://github.com/php/php-src/commit/db5f6713ee">db5f6713ee</a> by Felix Wiedemann</li>
 <li>Fix possible crash in case of exception in <a href="https://github.com/php/php-src/commit/c6eb5dc5fd">c6eb5dc5fd</a> by Dmitry Stogov</li>
-<li>FPM Downgrade occasional “<code>failed to acquire scoreboard</code>” warning in <a href="https://github.com/php/php-src/commit/db5f6713ee">db5f6713ee</a> by Felix Wiedemann</li>
 <li>Update request startup error messages in <a href="https://github.com/php/php-src/commit/09237f6126">09237f6126</a> by Eric Norris</li>
 <li><code>DatePeriod</code> properties cannot be made readonly in <a href="https://github.com/php/php-src/pull/9013">GH-9013</a> in <a href="https://github.com/php/php-src/commit/e13d60c039">e13d60c039</a> by Máté Kocsis 💜</li>
 <li>Drop support for <code>SQLITE_COPY</code> in authorizer callback in <a href="https://github.com/php/php-src/pull/9041">GH-9041</a> by Christoph M. Becker</li>
